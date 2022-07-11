@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Jobs from './jobs'
+import Navbar from './navbar'
 
 const list = [
     {id: 1, name: "Discover", description: "FDC Repair", WO: 20666, isMaterial: true, schedule: "5/1/2022", isComplete: false},
@@ -55,6 +56,7 @@ const list = [
 const home = () => {
     return (
         <>
+            <Navbar />
             <Container>
                 <Jobs list={list} colNames={colNames} />
             </Container>

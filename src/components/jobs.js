@@ -7,7 +7,13 @@ function checkDataType(obj) {
     
     if(obj === true)
     {
-        return <input type="checkbox" checked></input>
+        return <>
+        <InputMatType type="checkbox" checked></InputMatType> 
+        <InputMatType type="checkbox" checked></InputMatType> 
+        <InputMatType type="checkbox" checked></InputMatType> 
+            </>
+        
+        
     }
     else if (obj === false)
     {
@@ -71,6 +77,7 @@ const SearchBox = styled.input`
     margin-bottom: 30px;  
     display: block;
     font-weight: bold;
+    padding: 8px;
 
     ::placeholder,
     ::-webkit-input-placeholder {
@@ -80,13 +87,15 @@ const SearchBox = styled.input`
 
 
 const TableBody = styled.tbody`
-`
+    td {
+    }
+    `
 
 const JobTable = styled.table`
     margin: auto;
 
     td {
-        border: 0px solid gray;
+        border-bottom: 1px solid gray;
         padding: 15px 90px;
 
         
@@ -124,25 +133,25 @@ const Tableheader = styled.thead`
     
 `
 
-const Wrap = styled.div`
-    position: relative;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 3px solid rgba(249, 249, 249, 0.1);
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+// const Wrap = styled.div`
+//     position: relative;
+//     text-align: center;
+//     padding: 5px 0 5px 0;
+//     cursor: pointer;
+//     border-radius: 10px;
+//     border: 3px solid rgba(249, 249, 249, 0.1);
+//     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+//     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 
-    &:hover {
-        box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
-        rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-        transform: scale(1.05);
-        border-color: rgba(249, 249, 249, 0.8);
+//     &:hover {
+//         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+//         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+//         transform: scale(1.05);
+//         border-color: rgba(249, 249, 249, 0.8);
         
         
-   }
-`
+//    }
+// `
 
 
 const Container = styled.div`
@@ -151,18 +160,10 @@ const Container = styled.div`
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 `
 
+const InputMatType = styled.input`
+    display: inline ;
+
+`
 
 
 
-{/* <Wrap>
-                Job Name
-            </Wrap>
-            <Wrap>
-                WO Number
-            </Wrap>
-            <Wrap>
-                Materials
-            </Wrap>
-            <Wrap>
-                Scheduling
-            </Wrap> */}

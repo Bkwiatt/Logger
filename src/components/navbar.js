@@ -9,15 +9,15 @@ const navbar = () => {
     return (
         <>
             <Nav>
-                {/* <LogoWrapper to="/"> */}
-                    <NavLogo src={hillImage} />     
-                {/* </LogoWrapper> */}
-
+                    <LogoLink to="/">
+                        <NavLogo src={hillImage} alt="hill-logo" /> 
+                    </LogoLink>
+                        
                     <NavAuthentication>
                         <h3>
                             Brandon Kwiatkowski
                         </h3>
-                        <img src={profileImage} />
+                        <img src={profileImage} alt="profile-img" />
                     </NavAuthentication>
                 
                                
@@ -42,6 +42,9 @@ const Nav = styled.nav`
     padding: 0 36px;
 `
 
+const LogoLink = styled(LinkR)`
+
+`
 
 const NavLogo = styled.img`
     width: 202px;
@@ -49,9 +52,7 @@ const NavLogo = styled.img`
     cursor: pointer;
 `
 
-const LogoWrapper = styled(LinkR)`
-    cursor: pointer;
-`
+
 
 const NavAuthentication = styled.div`
    

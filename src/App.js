@@ -1,21 +1,34 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components/navbar'
+import SplashScreen from './components/splashscreen'
 import Home from './components/home'
+import Todo from './components/TodoList/index'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
-const list = [
-  {id: 1, name: "John Doe", Age: 28},
-  {id: 2, name: "Jane Doe", Age: 45},
-  {id: 3, name: "John Smith", Age: 32}
-]
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
+    <>  
+    <Router>
+      <Routes>
+      {/* Home Screen */}
+        <Route exact path="/" element={<SplashScreen />} />
+
+        {/* Job Board */}
+        <Route path="/job-board" element={<Home />}  />
+
+        {/* To-Do List */}
+        <Route path="/To-do" element={<Todo />}  />
+      </Routes>
+    </Router>
       
+      {/* <Navbar />
+      <Home /> */}
     </>
   );
 }
