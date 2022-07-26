@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Logger/static/css/main.ffaf019c.css",
+    "main.js": "/Logger/static/js/main.d2574370.js",
+    "static/media/discharge.mp4": "/Logger/static/media/discharge.a9734701712318cc8a8b.mp4",
+    "static/media/FabShop.mp4": "/Logger/static/media/FabShop.aae3ff2541b5b8e3ac24.mp4",
+    "static/media/ChicagoFlyBy.mp4": "/Logger/static/media/ChicagoFlyBy.03fa820ee6886f2eafc1.mp4",
+    "static/media/mw-viewer-video.mp4": "/Logger/static/media/mw-viewer-video.d43222b1c80225c1a449.mp4",
+    "static/media/HFP.mp4": "/Logger/static/media/HFP.0ae9d1c1951a031ba220.mp4",
+    "static/media/profileImage.png": "/Logger/static/media/profileImage.09f8b624c6e5ed2e57ba.png",
+    "static/media/hill.png": "/Logger/static/media/hill.cad745baeeaac10e46c9.png",
+    "static/media/modernwarfare.png": "/Logger/static/media/modernwarfare.038ba177938d6909625a.png",
+    "index.html": "/Logger/index.html",
+    "main.ffaf019c.css.map": "/Logger/static/css/main.ffaf019c.css.map",
+    "main.d2574370.js.map": "/Logger/static/js/main.d2574370.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffaf019c.css",
+    "static/js/main.d2574370.js"
+  ]
+}
