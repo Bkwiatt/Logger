@@ -50,7 +50,7 @@ const SearchBox = styled.input`
     background-color: gray;
     border: none;
     height:20px;
-    width: 250px;
+    width: 500px;
     margin-bottom: 30px;  
     display: block;
     font-weight: bold;

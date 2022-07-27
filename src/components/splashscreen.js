@@ -60,7 +60,6 @@ const SplashScreen = () => {
             
         </Container>  
         </>
-       
     )
 }
 
@@ -75,6 +74,11 @@ const Logo = styled.img`
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    opacity: 85%;
+
+    &:hover {
+        opacity: 100%;
+    }
 `
 
 const Container = styled.div`
